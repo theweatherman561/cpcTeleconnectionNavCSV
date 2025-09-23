@@ -1,5 +1,3 @@
 requests
 sys
-pandas
-matplotlib
-datetime
+csv
