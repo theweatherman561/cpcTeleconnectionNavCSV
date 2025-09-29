@@ -1,4 +1,4 @@
-name: Daily Teleconnection/Kp Index Update
+name: Twice-Daily Kp Index Update
 
 on:
   schedule:
