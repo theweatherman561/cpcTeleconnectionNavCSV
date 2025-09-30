@@ -83,12 +83,12 @@ if eveningForecast == True:
     day2.append(rows[3][2]) # 09z day 2
     day2.append(rows[4][2]) # 12z day 2
    
-    day2.append(rows[7][2]) # 21z day 2
-    day2.append(rows[0][3]) # 00z day 3
-    day2.append(rows[1][3]) # 03z day 3
-    day2.append(rows[2][3]) # 06z day 3
-    day2.append(rows[3][3]) # 09z day 3
-    day2.append(rows[4][3]) # 12z day 3
+    day3.append(rows[7][2]) # 21z day 2
+    day3.append(rows[0][3]) # 00z day 3
+    day3.append(rows[1][3]) # 03z day 3
+    day3.append(rows[2][3]) # 06z day 3
+    day3.append(rows[3][3]) # 09z day 3
+    day3.append(rows[4][3]) # 12z day 3
     
     day1_max = int(round(float(max(day1)), 0))
     day2_max = int(round(float(max(day2)), 0))
