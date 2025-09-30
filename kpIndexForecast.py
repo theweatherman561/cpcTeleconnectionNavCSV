@@ -12,6 +12,9 @@ with requests.Session() as s:
 
 rows = []
 
+morningForecast = False
+eveningForecast = False
+
 for i in range(0, len(forecast)):
     if forecast[i][21:23] == "12":
         morningForecast = True
@@ -112,3 +115,4 @@ with open('kpIndex.csv', 'w', newline='') as csvFileTwo:
     
     navCSVstuff = ["MaxValue","MaxValue","","",""]
     csvWrite.writerow(navCSVstuff + [str(day1_max), str(day2_max), str(day3_max)])
+    
