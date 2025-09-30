@@ -29,6 +29,10 @@ for i in range(0, len(forecast)):
         for j in range(i, i + 8):
             # Remove consecutive whitespace without deleting actual spaces
             addToData = ((re.sub('\s{2,}', ',', forecast[j])).split(","))[:-1]
+            addToData[1] = addToData[1][0:4]    # Make sure "5.33 (G1)" becomes
+            addToData[2] = addToData[2][0:4]    # "5.33" for the sake of converting
+            addToData[3] = addToData[3][0:4]    # to floating point numbers
+            print(addToData)
             rows.append(addToData)
        
 print(rows)
