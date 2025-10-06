@@ -27,14 +27,20 @@ for i in range(0, len(forecast)):
         daylist = ((re.sub('\s{2,}', ',', forecast[i - 1])).split(","))[1:]
         
         for j in range(i, i + 8):
-            # Remove consecutive whitespace without deleting actual spaces
-            addToData = ((re.sub('\s{2,}', ',', forecast[j])).split(","))[:-1]
-            print(addToData)
-            addToData[1] = addToData[1][0:4]    # Make sure "5.33 (G1)" becomes
-            addToData[2] = addToData[2][0:4]    # "5.33" for the sake of converting
-            addToData[3] = addToData[3][0:4]    # to floating point numbers
-            print(addToData)
-            rows.append(addToData)
+            line = forecast[j].strip()
+            
+            # Split by 2+ spaces — NOAA’s columns are always separated by at least two
+            parts = re.split(r'\s{2,}', line)
+            
+            # Pad missing columns just in case
+            while len(parts) < 4:
+                parts.append('')
+            
+            # Clean "(G1)" etc. using regex, not slicing
+            parts = [re.sub(r'\s*\(.*?\)', '', p) for p in parts]
+            
+            print(parts)
+            rows.append(parts)
        
 print(rows)
 
@@ -120,4 +126,3 @@ with open('kpIndex.csv', 'w', newline='') as csvFileTwo:
     
     navCSVstuff = ["MaxValue","MaxValue","","",""]
     csvWrite.writerow(navCSVstuff + [str(day1_max), str(day2_max), str(day3_max)])
-    
