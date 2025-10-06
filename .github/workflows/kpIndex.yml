@@ -1,8 +1,8 @@
-name: Twice Daily Kp Index Update
+name: Daily Kp Index Update (Morning)
 
 on:
   schedule:
-    - cron: '49 12/12 * * *'
+    - cron: '49 12 * * *'
   workflow_dispatch:
 
 jobs:
