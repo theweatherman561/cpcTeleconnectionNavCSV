@@ -1,11 +1,11 @@
 LOCATIONID,LOCATIONNAME,LATITUDE,LONGITUDE,TIME,DAY1,DAY2,DAY3
-ForecastTime1,ForecastTime1,,,00-03UT,8.67,6.67,4.67
-ForecastTime2,ForecastTime2,,,03-06UT,8.33,6.33,4.00
-ForecastTime3,ForecastTime3,,,06-09UT,7.00,6.00,3.33
-ForecastTime4,ForecastTime4,,,09-12UT,7.00,4.67,3.67
-ForecastTime5,ForecastTime5,,,12-15UT,6.00,4.00,3.33
-ForecastTime6,ForecastTime6,,,15-18UT,5.67,3.33,3.00
-ForecastTime7,ForecastTime7,,,18-21UT,7.67,4.33,3.00
-ForecastTime8,ForecastTime8,,,21-00UT,6.00,4.67,3.33
-Date,Date,,,,Nov 12,Nov 13,Nov 14
-MaxValue,MaxValue,,,,7,5,3
+ForecastTime1,ForecastTime1,,,00-03UT,8.00,4.67,2.33
+ForecastTime2,ForecastTime2,,,03-06UT,8.33,4.00,3.00
+ForecastTime3,ForecastTime3,,,06-09UT,7.33,3.33,2.33
+ForecastTime4,ForecastTime4,,,09-12UT,5.00,3.67,2.00
+ForecastTime5,ForecastTime5,,,12-15UT,4.33,3.33,1.33
+ForecastTime6,ForecastTime6,,,15-18UT,4.00,3.00,1.33
+ForecastTime7,ForecastTime7,,,18-21UT,4.33,3.00,2.00
+ForecastTime8,ForecastTime8,,,21-00UT,4.67,3.33,2.33
+Date,Date,,,,Nov 13,Nov 14,Nov 15
+MaxValue,MaxValue,,,,8,5,3
